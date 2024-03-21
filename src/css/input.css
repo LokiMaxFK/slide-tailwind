@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .slider{
+        @apply grid;
+        grid-template-areas: "slide";
+    }
+
+
+    .slider-childs{
+        @apply aspect-video before:absolute before:bg-gradient-to-b from-transparent to-black before:w-full before:h-full;
+        grid-area: slide;   
+        transition: .01s clip-path .6s;
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+
+
+    [data-active]{
+        order: 1;
+        transition: .6s clip-path;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .slider-next{
+        grid-area: slide;
+        z-index: 100;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .slider-prev{
+        grid-area: slide;
+        z-index: 100;
+        align-self: center;
+        justify-self: start;
+    }
+    
+}

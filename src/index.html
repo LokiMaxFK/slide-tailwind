@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú CSS</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <section class="w-[90%] mx-auto max-w-screen-lg overflow-hidden slider text-white rounded-lg mt-20" id="slider">
+
+        <figure class="slider-childs relative" data-active>
+
+            <img src="./assets/img1.jpg" class=" object-cover w-full h-full block ">
+
+            <div class="absolute inset-0 w-[90%] h-max mx-auto mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 1:</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At fugit libero non dicta laudantium itaque hic pariatur temporibus impedit placeat!</p>
+
+            </div>
+            
+        </figure>
+
+        <figure class="slider-childs relative">
+            <img src="./assets/img2.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 w-[90%] h-max mx-auto mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 2:</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At fugit libero non dicta laudantium itaque hic pariatur temporibus impedit placeat!</p>
+
+            </div>
+        </figure>
+
+        <figure class="slider-childs relative">
+            <img src="./assets/img3.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 w-[90%] h-max mx-auto mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 3:</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At fugit libero non dicta laudantium itaque hic pariatur temporibus impedit placeat!</p>
+
+            </div>
+        </figure>
+
+
+        <button class="slider-prev bg-white rounded-full ml-4" data-button="prev">
+            <img src="./assets/prev.svg" class="w-8 aspect-square md:w-14">
+        </button>
+
+        <button class="slider-next bg-white rounded-full mr-4" data-button="next">
+            <img src="./assets/next.svg" class="w-8 aspect-square md:w-14">
+        </button>
+
+    </section>
+    
+
+    <script defer src="./js/app.js"></script>
+</body>
+</html>
